@@ -51,8 +51,10 @@ export default function SEOHead({
     setMetaTag('name', 'description', description);
     if (keywords) setMetaTag('name', 'keywords', keywords);
 
-    // Canonical
+    // Canonical & Favicon
     setLinkTag('canonical', fullCanonicalUrl);
+    setLinkTag('icon', '/favicon.ico');
+    setLinkTag('apple-touch-icon', '/apple-touch-icon.png');
 
     // Open Graph
     setMetaTag('property', 'og:title', title);
