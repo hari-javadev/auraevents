@@ -116,7 +116,7 @@ export default function QuoteForm({ initialService, onPhoneChange }) {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/api/quote', {
+     const response = await fetch('https://auraevents-gyx5.onrender.com/api/quote', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
