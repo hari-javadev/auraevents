@@ -1,0 +1,239 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+    overflow-x: hidden;
+    max-width: 100vw;
+    width: 100%;
+  }
+
+  body {
+    background-color: #090807;
+    color: #FFF8EA;
+    overflow-x: hidden;
+    max-width: 100vw;
+    width: 100%;
+    position: relative;
+  }
+
+  #root {
+    overflow-x: hidden;
+    max-width: 100vw;
+    width: 100%;
+  }
+
+  /* Ensure sticky navbar does not obscure section headings when scrolled to */
+  section[id] {
+    scroll-margin-top: 76px;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #090807;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2A241C;
+    border-radius: 4px;
+    border: 1px solid rgba(216, 180, 106, 0.2);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D8B46A;
+  }
+}
+
+/* Responsive Brand Logo Sizing & Aspect-Ratio Preservation */
+.site-logo {
+  display: block;
+  width: clamp(100px, 12vw, 190px);
+  height: auto;
+  object-fit: contain;
+}
+
+.site-logo-nav {
+  display: block;
+  width: auto;
+  height: clamp(36px, 4vw, 44px);
+  max-height: 44px;
+  object-fit: contain;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.site-logo-mobile {
+  display: block;
+  width: clamp(90px, 20vw, 120px);
+  height: auto;
+  object-fit: contain;
+}
+
+.site-logo-footer {
+  display: block;
+  width: clamp(120px, 13vw, 170px);
+  height: auto;
+  object-fit: contain;
+}
+
+/* Gold Gradient Text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF8EA 0%, #EECB76 50%, #C99A3C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-light {
+  background: linear-gradient(135deg, #FFF8EA 0%, #FFEC9B 70%, #EECB76 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle Gold Border Glow */
+.border-gold-glow {
+  border: 1px solid rgba(238, 203, 118, 0.35);
+  transition: all 0.3s ease;
+}
+
+.border-gold-glow:hover {
+  border-color: rgba(238, 203, 118, 0.7);
+  box-shadow: 0 0 24px rgba(238, 203, 118, 0.25);
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(21, 18, 15, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(238, 203, 118, 0.22);
+}
+
+.glass-panel-dark {
+  background: rgba(9, 8, 7, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(238, 203, 118, 0.18);
+}
+
+/* Automatic animations that move automatically */
+@keyframes auto-shimmer-sweep {
+  0% {
+    transform: translateX(-160%);
+  }
+  35%, 100% {
+    transform: translateX(160%);
+  }
+}
+
+.animate-auto-shimmer {
+  animation: auto-shimmer-sweep 5.5s ease-in-out infinite;
+}
+
+@keyframes auto-float-gentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float-gentle {
+  animation: auto-float-gentle 4s ease-in-out infinite;
+}
+
+@keyframes auto-gold-pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(216, 180, 106, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(216, 180, 106, 0.35);
+  }
+}
+
+.animate-gold-pulse {
+  animation: auto-gold-pulse 3s ease-in-out infinite;
+}
+
+/* 3D Flip Card System with Smooth Hardware Acceleration */
+.flip-card-perspective {
+  perspective: 1200px;
+  -webkit-perspective: 1200px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.65s cubic-bezier(0.25, 0.8, 0.25, 1);
+  will-change: transform;
+}
+
+.flip-card-inner.is-flipped {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .flip-card-hover:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+  }
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  z-index: 2;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  z-index: 1;
+}
+
+/* Subtle flip indicator spin */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+/* Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

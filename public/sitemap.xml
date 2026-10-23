@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://auraevents.in/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://auraevents.in/images/hero.png</image:loc>
+      <image:title>AURA EVENTS — We Make Every Celebration Special</image:title>
+      <image:caption>Luxury Event Decoration, Stage Styling, and Professional DJ Services by AURA EVENTS</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://auraevents.in/images/aura.logo.png</image:loc>
+      <image:title>AURA EVENTS Official Logo</image:title>
+    </image:image>
+  </url>
+
+  <!-- Wedding Decorations -->
+  <url>
+    <loc>https://auraevents.in/services/wedding-decorations</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://auraevents.in/images/img3.png</image:loc>
+      <image:title>Luxury Wedding Stage Decoration &amp; Marriage Decorators</image:title>
+      <image:caption>Bespoke wedding stage styling, bridal backdrops, floral mandaps, and reception hall decorations</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Stage Decorations -->
+  <url>
+    <loc>https://auraevents.in/services/stage-decorations</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://auraevents.in/images/img1.png</image:loc>
+      <image:title>Premier Stage Decoration &amp; Event Backdrops</image:title>
+      <image:caption>Grand stage backdrops, LED wall integration, and royal sofa seating for weddings and celebrations</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Birthday Decorations -->
+  <url>
+    <loc>https://auraevents.in/services/birthday-decorations</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://auraevents.in/images/img2.png</image:loc>
+      <image:title>Creative Birthday Decorations &amp; Balloon Decorators</image:title>
+      <image:caption>Themed birthday party setups, organic balloon arches, and custom milestone celebration stages</image:caption>
+    </image:image>
+  </url>
+
+  <!-- DJ Services -->
+  <url>
+    <loc>https://auraevents.in/services/dj-services</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://auraevents.in/images/img4.png</image:loc>
+      <image:title>Professional DJ Services, Sound &amp; Event Lighting</image:title>
+      <image:caption>Concert-grade sound systems, intelligent moving head lights, and party DJ entertainment</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Engagement Decorations -->
+  <url>
+    <loc>https://auraevents.in/services/engagement-decorations</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://auraevents.in/images/pic2.png</image:loc>
+      <image:title>Romantic Engagement Decorations &amp; Ring Ceremony Setups</image:title>
+      <image:caption>Intimate ring exchange stages, floral entrance pathways, and customized photo booths</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Corporate Events -->
+  <url>
+    <loc>https://auraevents.in/services/corporate-events</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://auraevents.in/images/pic1.png</image:loc>
+      <image:title>Corporate Event Decorations &amp; Audio-Visual Production</image:title>
+      <image:caption>Conferences, inauguration stages, annual gala productions, and brand activations</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Party Decorations -->
+  <url>
+    <loc>https://auraevents.in/services/party-decorations</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://auraevents.in/images/pic5.png</image:loc>
+      <image:title>Party Decorations, Anniversaries &amp; Baby Showers</image:title>
+      <image:caption>Silver and golden anniversaries, naming ceremonies, baby showers, and private home celebrations</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

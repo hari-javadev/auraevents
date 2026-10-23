@@ -1,0 +1,14 @@
+# ============================================================
+# AURA EVENTS - Robots Exclusion Standard File (robots.txt)
+# Official Website: https://auraevents.in
+# ============================================================
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Host
+Host: https://auraevents.in
+
+# XML Sitemap
+Sitemap: https://auraevents.in/sitemap.xml
